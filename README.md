@@ -6,7 +6,7 @@ Escrito com NodeJS, em typescript com o express, usa o prisma e o SQLite pra sim
 
 Para começar, é necessário clonar o repositório com o seguinte comando:
 ```
-git clone (placeholder)
+git clone https://github.com/heiytor/typescript-api-rest.git
 ```
 Após isso, instale as depências com:
 ```
