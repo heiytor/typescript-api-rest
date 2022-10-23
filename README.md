@@ -27,13 +27,19 @@ Pode então, se criar as rotas dentro do insominia, cada uma com os métodos e u
 
 ### GET | http://localhost:3333/
 No método GET retorna todos dados da tabela e um código HTTP 200:
+![get-200](https://user-images.githubusercontent.com/107213601/197375363-7830ecec-e5a0-415b-852c-7d4dab146e14.png)
 
 ### POST | http://localhost:3333/
 No método POST é criado um novo usuário. Enviamos por JSON, no body, os campos da tabela, sendo eles: firstName, lastName e email. Sendo lastName opcional, caso o pedido seja aceito, uma requisição HTTP 201 é retornada, caso a sintaxe esteja errada, uma 406 é retornada:
+![post-201](https://user-images.githubusercontent.com/107213601/197375348-a23c019d-0e69-4e44-9a25-bdaa720d19f8.png)
+![post-406](https://user-images.githubusercontent.com/107213601/197375352-72500417-bea2-4f24-ad35-1bb54476b194.png)
 
-
-### PUT| http://localhost:3333/:id
+### PUT | http://localhost:3333/:id
 No método PUT, enviamos o ID do usuário que desejamos atualizar nos parametros, também por JSON e no body, os campos a serem alterados. Caso o ID seja válido, um código HTTP 200 é retornado, caso não, retorna-se um 404:
+![put-200](https://user-images.githubusercontent.com/107213601/197375339-41efb9f4-1099-413e-9508-9d8e8610b319.png)
+![put-404](https://user-images.githubusercontent.com/107213601/197375342-d3d340e5-bd7e-41e8-ad03-d9e9762d720b.png)
 
 ### DELETE | http://localhost:3333/:id
 No método DELETE, enviamos o ID do usuário que desejamos deletar nos paramêtros. Caso o ID seja válido, um código HTTP 202 é retornado, caso não, retorna-se um 404::
+![delete-202](https://user-images.githubusercontent.com/107213601/197375332-a7c1e448-f9c2-4412-93b1-d7f2a206ad74.png)
+![delete-404](https://user-images.githubusercontent.com/107213601/197375334-08f99c49-069e-4e82-b677-a5f6ffce5835.png)
